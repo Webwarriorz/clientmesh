@@ -63,6 +63,9 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+
+        session()->flash('message' ,'Thank you for signing up!');
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
