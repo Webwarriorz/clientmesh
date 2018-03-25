@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+/**
+ * Admin, clients routes
+ */
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/clients', 'ClientsController@index');
+    Route::get('/clients/import', 'ClientsController@import');
+    Route::post('/clients', 'ClientsController@store');
+});

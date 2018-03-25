@@ -3,13 +3,14 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-12">
+            <div class="col-md-8">
 
                 <div class="card text-white bg-dark">
-                    <div class="card-header">Welcome to ClientMesh!</div>
+                    <div class="card-header">Dashboard</div>
 
                     <div class="card-body">
-                        <p>Please log in or register in our system.</p>
+                        <h3>Welcome on board :)</h3>
+                        <p>Choose the function on the top menu.</p>
                     </div>
                 </div>
 
